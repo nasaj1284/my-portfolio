@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasan Muriithi | Data, Cyber & Dev</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- --------<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>------ -->
+    <!-- Latest Free Font Awesome (v6) CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/mylogo2.png" class="logo">
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
+                <li class="close-icon"><i class="fas fa-times" onclick="closemenu()"></i></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Python Dev | Data Analyst | Cybersecurity Analyst</p>
+            <h1>Hi, I'm <span>Jasan</span><br>Muriithi From Kenya</h1>
+        </div>
+    </div>
+</div>
+<!-----------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about me.png" class="image-section">
+            </div>
+            <div class="about-col-2">
+                <h1 class= "sub-title">About Me</h1>
+                <p class="short-about">I am a multi-skilled tech enthusiast with practical experience and training in Python programming, data analytics, web development, and cybersecurity.</p> <!--------write here about urself-->
+                <button class="learn-more-btn">Show More</button>
+                <p class="more-about hidden">
+                    I have hands-on skills in Excel, SQL, Tableau, and Google Sheets, as well as training in ethical hacking and junior cybersecurity analysis from Cisco Academy.
+                    Currently pursuing a BSc. in Forensic Science at Kenyatta University, I am passionate about using technology to solve real-world problems. I have built several projects including a multitask app, data analytics dashboards, and responsive websites.
+                    My goal is to leverage my skills in Python, data analytics, and cybersecurity to contribute to innovative projects and help organizations make data-driven decisions while ensuring their digital security.
+                    Feel free to connect with me on LinkedIn or reach out via email for collaboration opportunities or inquiries.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python Programming</span><br>Proficient in scripting, automation, and building back-end systems.</li>
+                        <li><span>Web Development</span><br>Frontend & backend development using HTML, CSS, and JavaScript.</li>
+                        <li><span>Cybersecurity</span><br>Certified Junior Cybersecurity Analyst & trained in ethical hacking and network security.</li>
+                        <li><span>Data Analytics</span><br>Skilled in Excel, SQL, Tableau, and data visualization for decision making.</li>
+                        <li><span>Version Control</span><br>Experienced in using Git & GitHub for code management and collaboration.</li>
+                        <li><span>Project Tools</span><br>Scrum methodology, Trello, and documentation with Notion/Google Docs.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Present</span><br>Training in Cybersecurity & Ethical Hacking (Cisco Academy)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                         <li><span>2022 - Present</span><br>BSc. Forensic Science, Kenyatta University</li>
+                         <li><span>Certifications</span><br>Data Analysis, Python Programming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----services-->
+<div id="services">
+    <div class="container">
+        <h1 class= "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Python Programming</h2>
+                <p>I build automations, scripts, and web apps using Python and frameworks like Flask. I also write clean, scalable code with real-world applications.</p>
+                <a href="#portfolio-python">View Projects</a>
+            </div>
+            <div>
+                <i class="fas fa-chart-line"></i>  <!-- Line chart -->
+                <h2>Data Analytics</h2>
+                <p>I use Excel, SQL, and Tableau to gather, clean, analyze, and visualize data for business insights and decisions.</p>
+                <a href="#portfolio-data">View Projects</a>
+            </div>
+            <div>
+                <i class="fas fa-shield-alt"></i>  <!-- Security shield -->
+                <h2>Cybersecurity</h2>
+                <p>Trained in network defense, risk mitigation, and ethical hacking to enhance digital security and system resilience.</p>
+                <a href="#portfolio-cyber">View Projects</a>
+            </div>
+            <div>
+                <i class="fas fa-globe"></i>
+                <h2>Web Development</h2>
+                <p>I design responsive websites using HTML, CSS, and JavaScript that are fast, user-friendly, and mobile-optimized.</p>
+                <a href="#portfolio-web">View Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work" id="portfolio-python">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Multitask App</h3>
+                    <p>Description of work</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work" id="portfolio-data">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Data Analytics Project</h3>
+                    <p>Description of work</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work" id="portfolio-cyber">
+                <img src="images/work-3.png">
+                <div class="layer">
+                     <h3>Cybersecurity Projects</h3>
+                    <p>Network analysis, penetration testing, and vulnerability scanning.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work" id="portfolio-web">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Responsive Portfolio Website</h3>
+                    <p>Personal portfolio built using HTML, CSS, JS.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#portfolio-details" class="btn">See More</a> -->
+        <section id="portfolio-details" class="container">
+            <h2 class="sub-title">More of My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-sample1.jpg" alt="Project 1">
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>Short description of the project or technology used.</p>
+                        <a href="videos/demo1.mp4" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-sample2.jpg" alt="Project 2">
+                    <div class="layer">
+                        <h3>Another Project</h3>
+                        <p>More info about what you did in this project.</p>
+                        <a href="videos/demo2.mp4" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- --------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <!-- <p><i class="fas fa-paper-plane"></i> muriithijasan@gmail.com</p> -->
+                 <p>
+                    <a href="https://mail.google.com/mail/?view=cm&to=muriithijasan@gmail.com" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fas fa-paper-plane"></i> muriithijasan@gmail.com
+                    </a>
+                </p>
+
+                <p><i class="fas fa-phone-square-alt"></i> +254743258629</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-x"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/254743258629" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/jasan-muriithi-625503319/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Data Analyst - Resume.docx" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Nasaj. <i class="fas fa-heart"></i> Built with Passion</p>
+    </div>
+</div>
+
+
+<!-- <script>
+
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link"); 
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script> -->
+
+<script>
+  function opentab(tabName) {
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+
+    for (let i = 0; i < tabLinks.length; i++) {
+      // If the tab is clicked again, remove active classes to toggle hide
+      if (tabLinks[i].innerText.toLowerCase() === tabName.toLowerCase() &&
+          tabLinks[i].classList.contains("active-link")) {
+        tabLinks[i].classList.remove("active-link");
+        tabContents[i].classList.remove("active-tab");
+        return;
+      }
+    }
+
+    // Otherwise, activate the selected tab
+    for (let i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].classList.remove("active-link");
+      tabContents[i].classList.remove("active-tab");
+
+      if (tabLinks[i].innerText.toLowerCase() === tabName.toLowerCase()) {
+        tabLinks[i].classList.add("active-link");
+        tabContents[i].classList.add("active-tab");
+      }
+    }
+  }
+</script>
+
+
+<script>
+
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<!-- <form name="submit-to-google-sheet">
+  <input name="Email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form> -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyi1iN7vxfhxeMi8LVE-Zo98m3dWcDL8TECeZUvdhfvcB7a_ixt2YzMWe_y1y2aP2sd/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message successfully sent "
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+  // Learn More toggle
+  const learnMoreBtn = document.querySelector(".learn-more-btn");
+  const moreAbout = document.querySelector(".more-about");
+
+  learnMoreBtn.addEventListener("click", () => {
+    moreAbout.classList.toggle("hidden");
+    learnMoreBtn.textContent = moreAbout.classList.contains("hidden") ? "Learn More" : "Show Less";
+  });
+
+  // Tabs toggle
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      tabButtons.forEach(btn => btn.classList.remove("active"));
+      tabContents.forEach(content => content.classList.remove("active"));
+
+      button.classList.add("active");
+      document.getElementById(button.dataset.target).classList.add("active");
+    });
+  });
+</script>
+
+</body>
+</html>
+
