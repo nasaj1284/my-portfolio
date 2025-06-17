@@ -188,7 +188,18 @@
                     </a>
                 </p>
 
-                <p><i class="fas fa-phone-square-alt"></i> +254743258629</p>
+                <!-- <p><i class="fas fa-phone-square-alt"></i> +254743258629</p> -->
+                <div class="contact-option">
+                    <i class="fas fa-phone-square-alt" id="phone-icon"></i>
+                    <span id="phone-number">+254 743 258 629</span>
+                
+                    <div class="phone-tooltip" id="phone-tooltip">
+                        <a href="tel:+254743258629">📞 Call</a>
+                        <button onclick="copyPhoneNumber()">📋 Copy</button>
+                    </div>
+                </div>
+
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
                 <div class="social-icons">
                     <a href=""><i class="fab fa-facebook"></i></a>
                     <a href=""><i class="fab fa-x"></i></a>
@@ -321,6 +332,16 @@
     });
   });
 </script>
+
+<script>
+  function copyPhoneNumber() {
+    const phone = document.getElementById('phone-number').textContent;
+    navigator.clipboard.writeText(phone).then(() => {
+      alert("Phone number copied to clipboard!");
+    });
+  }
+</script>
+
 
 </body>
 </html>
