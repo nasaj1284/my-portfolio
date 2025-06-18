@@ -43,7 +43,7 @@
             <div class="about-col-2">
                 <h1 class= "sub-title">About Me</h1>
                 <p class="short-about">I am a multi-skilled tech enthusiast with practical experience and training in Python programming, data analytics, web development, and cybersecurity.</p> <!--------write here about urself-->
-                <button class="learn-more-btn">Show More</button>
+                <button class="show-more-btn">Show More</button>
                 <p class="more-about hidden">
                     I have hands-on skills in Excel, SQL, Tableau, and Google Sheets, as well as training in ethical hacking and junior cybersecurity analysis from Cisco Academy.
                     Currently pursuing a BSc. in Forensic Science at Kenyatta University, I am passionate about using technology to solve real-world problems. I have built several projects including a multitask app, data analytics dashboards, and responsive websites.
@@ -309,13 +309,13 @@
 </script>
 
 <script>
-  // Learn More toggle
-  const learnMoreBtn = document.querySelector(".learn-more-btn");
+  // Show More toggle
+  const ShowMoreBtn = document.querySelector(".show-more-btn");
   const moreAbout = document.querySelector(".more-about");
 
-  learnMoreBtn.addEventListener("click", () => {
+  ShowMoreBtn.addEventListener("click", () => {
     moreAbout.classList.toggle("hidden");
-    learnMoreBtn.textContent = moreAbout.classList.contains("hidden") ? "Learn More" : "Show Less";
+    ShowMoreBtn.textContent = moreAbout.classList.contains("hidden") ? "Show More" : "Show Less";
   });
 
   // Tabs toggle
