@@ -139,17 +139,19 @@ nav ul li a:hover::after {
 } */
 
 /* ABOUT Section Enhancements */
-.learn-more-btn {
+.show-more-btn {
   margin-top: 20px;
   padding: 10px 20px;
   background: #ff004f;
   color: #fff;
   border: none;
   border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
 }
-.learn-more-btn:hover {
+.show-more-btn:hover {
   background: #e60047;
 }
 .more-about {
