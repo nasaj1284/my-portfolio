@@ -32,7 +32,7 @@ body {
 /* ---------------- HEADER ------------------ */
 #header {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
     url(images/matt-gross-9aCkSl6YcXg-unsplash.jpg);
   background-size: cover;
@@ -104,13 +104,30 @@ nav ul li a:hover::after {
   color: var(--primary);
 }
 
-.header-text h1 span {
+.header-name h1 span {
+  color: var(--accent);
+  
+}
+
+.hero-container {
+  font-size: 28;
+  margin-top: 25%;
+  margin-bottom: 0%;
+  animation: fadeIn 2s ease;
+}
+
+.hero-container h1 {
   color: var(--accent);
 }
 
+.cta-button {
+  font-size: 28px;
+  margin-bottom: 20%;
+}
 /* ---------------- ABOUT ------------------ */
 #about {
-  padding: 80px 0;
+  padding:100px 0;
+  margin-top: 70%;
 }
 
 .container{
@@ -130,9 +147,9 @@ nav ul li a:hover::after {
     flex-basis: 35%;  
 }
 
-/* .about-col-2 {
+.about-col-2 {
   flex-basis: 60%;
-} */
+}
 
 /* .about-col-1, .about-col-2 {
   flex: 1 1 45%;
@@ -142,9 +159,9 @@ nav ul li a:hover::after {
 .show-more-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #ff004f;
+  background: var(--background-dark);
   color: #fff;
-  border: none;
+  border: 2px solid var(--primary);
   border-radius: 6px;
   font-size: 16px;
   font-weight: 600;
@@ -152,7 +169,8 @@ nav ul li a:hover::after {
   transition: background 0.3s;
 }
 .show-more-btn:hover {
-  background: #e60047;
+  background: var(--primary);
+  /* animation: fadeIn 2s ease; */
 }
 .more-about {
   margin-top: 20px;
@@ -162,11 +180,13 @@ nav ul li a:hover::after {
 }
 .more-about.hidden {
   display: none;
+  font-size: small;
 }
 
 .about-col-1 img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
+  /* margin-top: ; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -191,7 +211,7 @@ nav ul li a:hover::after {
   transition: color 0.3s ease;
 }
 
-.tab-links::after {
+.tab-links:hover::after {
   content: '';
   width: 0;
   height: 3px;
@@ -199,12 +219,16 @@ nav ul li a:hover::after {
   position: absolute;
   bottom: -5px;
   left: 0;
-  transition: 0.3s;
+  transition: 0.5s;
+  width: 30%;
 }
 
-.tab-links.active-link::after {
-  width: 50%;
+.tab-links.active-link:hover::after {
+  width: 100%;
 }
+/* :hover::after {
+  width: 100%;
+} */
 
 .tab-contents ul li {
   list-style: none;
@@ -573,7 +597,7 @@ form .btn2{
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
