@@ -536,6 +536,12 @@ form .btn2{
     font-size: 36px;
   }
 
+  .hero-container{
+    font-size: 36px;
+  }
+  #about {
+    margin-top: auto;
+  }
   /* nav .fas {
     display: block;
     font-size: 25px;
