@@ -104,11 +104,21 @@ nav ul li a:hover::after {
   color: var(--primary);
 }
 
+.header-name {
+  margin: 20px;
+}
 .header-name h1 span {
   color: var(--accent);
   
 }
 
+#hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
 .hero-container {
   font-size: 28;
   margin-top: 25%;
@@ -127,7 +137,7 @@ nav ul li a:hover::after {
 /* ---------------- ABOUT ------------------ */
 #about {
   padding:100px 0;
-  margin-top: 70%;
+  margin-top: 20px;
 }
 
 .container{
@@ -144,7 +154,8 @@ nav ul li a:hover::after {
 }
 
 .about-col-1{
-    flex-basis: 35%;  
+    flex-basis: 35%;
+    margin: auto;  
 }
 
 .about-col-2 {
@@ -186,7 +197,6 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   border-radius: 5px;
-  /* margin-top: ; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -536,12 +546,12 @@ form .btn2{
     font-size: 36px;
   }
 
-  .hero-container{
+  /* .hero-container{
     font-size: 36px;
   }
   #about {
     margin-top: auto;
-  }
+  } */
   /* nav .fas {
     display: block;
     font-size: 25px;
