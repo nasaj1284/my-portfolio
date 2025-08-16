@@ -252,7 +252,10 @@ nav ul li a:hover::after {
 }
 
 .tab-contents {
-  display: none;
+  display: none;              /* enables flexbox */
+  /* align-items: center;        centers horizontally */
+  /* justify-content: center;    centers vertically */
+  text-align: center; 
 }
 
 .tab-contents.active-tab {
@@ -542,8 +545,28 @@ form .btn2{
     font-size: 36px;
   }
 
+  .image-section {
+    margin-top: 10%;
+    margin-right: auto;
+    padding: 0 1rem;
+  }
+
   .sub-title {
     font-size: 36px;
+    text-align: center;
+    padding: 0 1rem;
+    /* margin-top: auto;
+    margin: auto; */
+  }
+
+  .short-about {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .more-about.hidden {
+    text-align: center;
+    padding: 0 1rem;
   }
 
   /* .hero-container{
