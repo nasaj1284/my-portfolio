@@ -228,7 +228,7 @@ function initContactForm() {
         
         try {
             // Replace with your Google Apps Script URL
-            const scriptURL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxMk_8v3vo9x1t49Hyxio5h3A0NmpUdpjjgW2OkuVuCERb_Vk3ECT4uRlY7vTqmJ96U/exec';
             
             const response = await fetch(scriptURL, {
                 method: 'POST',
